@@ -33,7 +33,7 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow">
+    <nav className="sticky top-0 z-50 bg-gray100 shadow">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
         <Link href="/" className="hover:text-blue-600">
           My Ecommerce
@@ -70,20 +70,20 @@ export const Navbar = () => {
         </div>
       </div>
       {mobileOpen && (
-        <nav className="md:hidden bg-white shadow-md">
+        <nav className="md:hidden bg-gray-100 shadow-md">
           <ul className="flex flex-col p-4 space-y-2">
             <li>
-              <Link href="/" className="block hover:text-blue-600">
+              <Link href="/" className="block hover:text-orange-600">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/products" className="block hover:text-blue-600">
+              <Link href="/products" className="block hover:text-orange-600">
                 Products
               </Link>
             </li>
             <li>
-              <Link href="/checkout" className="block hover:text-blue-600">
+              <Link href="/checkout" className="block hover:text-orange-600">
                 Checkout
               </Link>
             </li>
